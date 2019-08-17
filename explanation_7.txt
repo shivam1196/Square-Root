@@ -1,0 +1,30 @@
+PROBLEM 7: Finding the Square Root of an Integer
+
+The objective of this problem was to find the square root of an integer without using any
+python inbuilt method.
+
+The expected time complexity to perform this operation was O(log n)
+
+In order to achieve the expected result with the give time complexity we choose our algorithm in this case to be of binary
+search.
+
+Reason being, the run time complexity of binary search is O(log n)
+
+Now one of the prerequisite to use binary search is that the list in which we are searching should be sorted
+
+Hence we create our own list of whole numbers since they are sorted. It becomes possible for us to use the binary search.
+Thereby achieving the time complexity constraint of O(log n)
+
+Algorithm:
+1. Suppose we have an array of integers from 1 to half of number
+2. Now we search our square root in this array using binary search
+3. Check condition will be if square of middle element is greater then number then we reject right array and search again in left array
+4. Otherwise we reject left array and search in right array
+
+Time Complexity :
+    Binary Search : O(log n)
+
+Space Complexity :  O(1)
+
+
+
